@@ -41,10 +41,4 @@ public class GoogleSearchSteps {
         String content = page.content();
         assertTrue(content.contains(expected));
     }
-
-    @Then("the results should contain {string}")
-    public void the_results_should_contain(String expected) {
-        String content = page.content();
-        assertTrue(content.contains(expected));
-    }
 }
